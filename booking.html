@@ -1,0 +1,157 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <meta charset="utf-8">
+  <body>
+<header>
+  <fieldset>
+    <legend>Контактная информация</legend>
+    <label>Имя<input type="text"></label>
+    <label>Фамилия<input type="text"></label>
+<label>Дата рождения<input type="date"></label>
+    <label>E-mail<input type="email"></label>
+<label>Наименование документа  <input type="text"></label>
+  </fieldset>
+</header>
+<form action="/action_page.php">
+  <div class="test-regist">
+    <div class="regist">
+      <fieldset>
+      <legend>Укажите маршрут чтобы найти дешевые авиабилеты</legend>
+      <label for="city"><i class="fa fa-institution"></i> Откуда</label>
+      <input type="text" id="city" name="city" placeholder="Москва">
+      <label for="city1"><i class="fa fa-plane"></i> Куда</label>
+      <input type="text" id="city1" name="city1" placeholder="Санкт-Петербург">
+      <label for="city1"><i class="fa fa-calendar"></i>Дата вылета</label>
+      <input type="date"name="calendar">
+      <label for="city1"><i class="fa fa-calendar-times-o"></i>Обратно</label>
+      <input type="date"name="calendar">
+      <label for="city1"><i class="fa fa-user-o"</i>Кол-во пассажиров</label>
+      <input type="number">
+      <label for="city1"><i class="fa fa-clock-o"></i>Время вылета</label>
+      <input type="time">
+      <label>Рейс</label>
+      <p><select name="Авиалинии">
+        <option value="s1">S7</option>
+        <option value="s2" selected>Меридиан</option>
+        <option value="s3">АВИАПАРК</option>
+        <option value="s4"">Взлет</option>
+        <option value="s5">КрасАвиа</option>
+      </select>
+        <input type="submit" value="Выбрать"></p>
+      <button type="submit"><i class="fa fa-search"></i></button>
+      </fieldset>
+    </div>
+  </div>
+  </div>
+  </div>
+</form>
+<main>
+  <video autoplay loop muted class="bgvideo" id="bgvideo">
+    <source src="Airport - 1383.mp4" type="video/mp4"></source>
+  </video>
+  <fieldset>
+  <legend>Поиск отеля</legend>
+  <label>Название города</label>
+  <input type="search" name="search" placeholder="Рига, Латвия">
+  <div class="one-third-width">
+    <label>Число, месяц, год</label>
+    <input type="date"name="calendar">
+    <label>Количество дней</label>
+   <input type="number" min="1" max="14">
+  <div class="buttons">
+    <label>Я согласен с политикой конфидециальности</label>
+    <input type="checkbox">
+    <input type="submit" value="Забронировать">
+  </div>
+  </fieldset>
+</main>
+</body>
+</div>
+  <style>
+    .regist{
+      position: center;
+      top: 453px;
+      left: 374px;
+      padding: 20px;
+    }
+    body{
+      color: white;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+
+    }
+    input {
+      margin-bottom: 10px;
+      width: 95%;
+      height: 24px;
+    }
+    output {
+      display: inline-block;
+      margin: 0 5px 10px;
+      width: 30px;
+      height: 20px;
+      text-align: center;
+    }
+    input, output {
+      padding: 2px 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      vertical-align: middle;
+      font-family: "Roboto";
+    }
+    input[type="submit"] {
+      display: inline-block;
+      margin: 0 5px;
+      padding: 6px 15px;
+      width: auto;
+      height: auto;
+      border: none;
+      border-radius: 5px;
+      background: #2c3e50;
+      color: #fff;
+    }
+    .one-third-width {
+      width: 33.3%;
+    }
+    .two-third-width {
+      width: 66.6%;
+    }
+    .half-width {
+      width: 50%;
+    }
+    .one-third-width,
+    .two-third-width,
+    .half-width {
+      display: inline-block;
+      margin-right: -4px;
+    }
+    .one-third-width input,
+    .two-third-width input {
+      width: 80%;
+    }
+    .half-width input {
+      width: 80%;
+    }
+    .half-width input[type="range"] {
+      width: 50%;
+    }
+    .output-area {
+      vertical-align: top;
+    }
+    .buttons {
+      margin-top: 10px;
+      text-align: center;
+    }
+    .bgvideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -9999;
+    }
+  </style>

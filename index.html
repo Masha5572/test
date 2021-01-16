@@ -1,0 +1,424 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <title>Airlines</title>
+</head>
+<body>
+<header>
+<div class="logo">
+    <a href="index.html" class="test-0-logo"><img src="img/logo.png "alt=""></a> <br>
+  </div>
+  <ul class="top-menu">
+    <li>
+      <a href='stocks.html' class=”test-nav-1”>Акции</a>
+    </li>
+    <li>
+      <a href='booking.html' class=”test-nav-2”>Бронирование</a>
+    </li>
+    <li>
+      <a href='register.html' class=”test-nav-3”>Регистрация на рейс</a>
+    </li>
+    <li>
+      <a href='profile.html' class=”test-nav-4”>Личный кабинет</a>
+    </li>
+    <li>
+      <a id="menu"href="#"class="icon">&#9776</a>
+    </li>
+    <li>
+      <form>
+        <input class="search-in" type="text" placeholder="Поиск">
+        <button type="submit"></button>
+      </form>
+    </li>
+  </ul>
+</div>
+</header>
+<main>
+  <video autoplay loop muted class="bgvideo" id="bgvideo">
+    <source src="Island - 1195.mp4" type="video/mp4"></source>
+  </video>
+    <h1><b>Коронавирус:
+      памятка путешественникам</b></h1>
+  <p><img src="img/загруженное (1).png"class="cd"></p>
+  <p><img src="img/ф.png"class="cd">
+  <p><img src="img/д.png"class="cd">
+  <p><img src="img/о.png"class="cd">
+  <section class="sec3"></section>
+  <div class="sec-text">
+  </div>
+</main>
+<footer>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <div class="wrapper">
+    <ul>
+      <li class="facebook"><a href="https://ru-ru.facebook.com/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+      <li class="twitter"><a href="https://twitter.com/"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+      <li class="instagram"><a href="https://www.instagram.com/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+      <li class="google"><a href="https://www.google.ru/"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a></li>
+      <li class="whatsapp"><a href="https://www.whatsapp.com/"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+  <div class="d1">
+  <div class="test-0-phone ">
+  <h2>Контактный номер</h2>
+  <p>8 (800) 100-10-10</p>
+    <p>© 2020. Airline — Все пpава защищены</p>
+    <h3>Получайте скидки и идеи для путешествий</h3>
+    <label for="email">Пожалуйста введите свою почту:</label>
+    <input class="mail-in" type="email" id="email" name="email">
+    </div>
+  </div>
+  </div>
+</footer>
+</body>
+<style>
+
+  .pr{
+    float: right;
+    color: white;
+  }
+.cd{
+ display: block;
+  margin:auto;
+width: 1000px;
+}
+h1{
+  text-align: center;
+  color: white;
+}
+p{
+  color: white;
+}
+  .new{
+    text-align: center;
+    color: white;
+  }
+  .main-in{
+    position: inherit;
+  }
+  main{
+    position: relative;
+    top: 70px;
+  }
+  a{
+    text-decoration: darksalmon;
+  }
+  li{
+    text-decoration: none;
+    list-style: none;
+  }
+  body{
+    font-family: 'Playfair Display', serif;
+    color: black;
+    background: url('video.png');
+    background-size: cover;
+
+  }
+  .logo{
+    width: 400%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  body {margin: 0;padding: 0;font-family: sans-serif;}
+
+ .top-menu  {
+   position: absolute;
+   top: 226px;
+   left: 45%;
+   transform: translate(-50%, -50%);
+   margin: 0;
+   padding: 40px;
+   display: flex;
+  }
+  .top-menu li {
+    list-style: none;
+  }
+  .top-menu  li a {
+    position: relative;
+    display: block;
+    margin: 0 10px;
+    padding: 5px 10px;
+    color: darksalmon;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  .top-menu li a::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 2px);
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: #9e6463;
+    transition: 0.5s;
+  }
+  .top-menu li a:hover {
+    color: #fff;
+  }
+  .top-menu li a:hover::before {
+    animation: animate .5s linear forwards;
+  }
+  @keyframes animate {
+    0% {
+      top: calc(50% - 2px);
+      left: -100%;
+      height: 4px;
+      z-index: 1;
+    }
+    50% {
+      top: calc(50% - 2px);
+      left: 0;
+      height: 4px;
+      z-index: 1;
+    }
+    100% {
+      top: 0;
+      left: 0;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+.test-0-ai{
+  max-width: 100%;
+  text-align: center;
+}
+.test-0-ad{
+  display: flex;
+  justify-content: center;
+
+}
+.test{
+  width: 70%;
+  display: flex;
+  text-align: justife;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  padding: 10px;
+  font-style: italic;
+}
+.test-item{
+  width: 30%;
+  margin-left: 35px;
+  color: white;
+  border-color: #9e6463;
+}
+.test-item img{
+  width: 150px;
+  height: 100px;
+}
+.center{
+  text-align: center;
+}
+footer{
+  position: relative;
+  bottom: 0%;
+}
+  .wrapper {
+    position: absolute;
+    top: 136%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+  }
+  .wrapper ul {
+    list-style: none;
+  }
+  .wrapper ul li {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid white;
+    float: left;
+    transition: all 0.5s ease;
+  }
+  .wrapper ul li .fa {
+    color: white;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+  }
+  .wrapper ul li:hover.facebook {
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+  }
+  .wrapper ul li:hover .fa-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+  }
+  .wrapper ul li:hover.twitter {
+    border: 5px solid #00aced;
+    box-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+  }
+  .wrapper ul li:hover .fa-twitter {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+  }
+  .wrapper ul li:hover.instagram {
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+  .wrapper ul li:hover .fa-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+  .wrapper ul li:hover.google {
+    border: 5px solid #dd4b39;
+    box-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+  }
+
+  .wrapper ul li:hover .fa-google {
+    color: #dd4b39;
+    text-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+  }
+  .wrapper ul li:hover.whatsapp {
+    border: 5px solid #4dc247;
+    box-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;
+  }
+  .wrapper ul li:hover .fa-whatsapp {
+    color: #4dc247;
+    text-shadow: 0 0 15px #4dc27;
+    transition: all 0.5s ease;
+  }
+ @media screen and (max-width: 640px){
+    .wrapper {
+      width: 350px;
+    }
+    .wrapper ul li{
+      margin-top: 10px;
+    }
+    .wrapper ul li.google{
+      margin-left: 60px;
+    }
+  }
+  @media screen and (max-width: 340px){
+    .wrapper {
+      width: 150px;
+    }
+    .wrapper ul li{
+      margin:15px;
+    }
+    .wrapper ul li.google{
+      margin-left: 15px;
+    }
+  }
+.test-0-phone{
+  margin-top: 80px;
+ text-align: center;
+  color: white;
+}
+h5{
+  text-align: center;
+}
+.test-cor{
+  background-color: #9e6463;
+}
+
+.auth{
+  font-family: sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 0 20px;
+}
+.auto input{
+  font-size: 18px;
+  padding: 5px;
+  margin: 5px 0;
+  outline: white;
+}
+.frgot{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 5px 0;
+  transition: .2s;
+}
+.frgot:hover{
+  color: indianred;
+  border: none;
+}
+.bth{
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 5px 70px;
+  color: cornsilk;
+  background: linear-gradient(to top, #E4AF9D 20%, #E4E4D8 50%, #A19887 80%);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.bth:hover{
+  background: linear-gradient(25deg, lightcoral, red);
+}
+.bth:active {
+  background: linear-gradient(25deg, coral, lightcoral);
+}
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+}
+
+  .search-in {
+    width: 25%;
+    height: 42px;
+    padding-left: 10px;
+    border-radius: 5px;
+    outline: none;
+    background: #F9F0DA;
+    color: #9E9C9C;
+    position: absolute;
+  }
+  .d1 button {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    background: #7BA7AB;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  .d1 button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #F9F0DA;
+  }
+.email{
+  text-align: center;
+  background-color: #9e6463;
+}
+  .bgvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -9999;
+  }
+  </style>
